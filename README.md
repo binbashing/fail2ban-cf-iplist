@@ -6,9 +6,13 @@ Fail2Ban configuration and CLI tool to update [Cloudflare Custom IP Lists](https
 
 ## Requirements
 * A Cloudflare API Token with the following permissions ([Docs](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)):
-    * Account:Account Filter Lists:Edit
-    * Account:Account Filter Lists:Read
-    * Account:Account Settings: Read
+
+    > `Account:Account Filter Lists:Edit`
+
+    > `Account:Account Filter Lists:Read`
+
+    > `Account:Account Settings: Read`
+
 * A Cloudflare Custom IP List ([Docs](https://developers.cloudflare.com/waf/tools/lists/create-dashboard/))
 
 ## Contents

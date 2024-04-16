@@ -7,20 +7,22 @@ Fail2Ban configuration and CLI tool to update [Cloudflare Custom IP Lists](https
 ## Requirements
 * A Cloudflare API Token with the following permissions ([Docs](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)):
 
-    > `Account:Account Filter Lists:Edit`
+    `Account:Account Filter Lists:Edit`
 
-    > `Account:Account Filter Lists:Read`
+    `Account:Account Filter Lists:Read`
 
-    > `Account:Account Settings: Read`
+    `Account:Account Settings: Read`
 
 * A Cloudflare Custom IP List ([Docs](https://developers.cloudflare.com/waf/tools/lists/create-dashboard/))
 
 ## Contents
 
-### [cloudflare-iplist.conf](./cloudflare-iplist.conf)
+>[cloudflare-iplist.conf](./cloudflare-iplist.conf)
+
 A Fail2Ban Action configuration file.  On most systems this belongs in `/etc/fail2ban/actions.d`
 
-### [cloudflare-iplist](./cloudflare-iplist)
+>[cloudflare-iplist](./cloudflare-iplist)
+
 A CLI shell utility for adding and removing IP address from a Cloudflare Custom IP List
 
 Requires CF_API_TOKEN environment variable containing a Cloudflare API Token
@@ -40,7 +42,8 @@ Usage:
 ```
 
 
-### [Dockerfile](./Dockerfile)
+>[Dockerfile](./Dockerfile)
+
 
 A simple Docker container defintion Based on [binbashing/fail2ban](https://github.com/binbashing/fail2ban-docker) with cloudflare-iplist installed
 

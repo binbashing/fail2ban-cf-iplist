@@ -17,7 +17,7 @@ Fail2Ban configuration and CLI tool to update [Cloudflare Custom IP Lists](https
 A Fail2Ban Action configuration file.  On most systems this belongs in `/etc/fail2ban/actions.d`
 
 ### [cloudflare-iplist](./cloudflare-iplist)
-A CLI shell utility for adding and removing IP address from a Cloudflare Custom IP Lists
+A CLI shell utility for adding and removing IP address from a Cloudflare Custom IP List
 
 Requires CF_API_TOKEN environment variable containing a Cloudflare API Token
 

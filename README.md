@@ -45,6 +45,6 @@ Usage:
 >[Dockerfile](./Dockerfile)
 
 
-A simple Docker container defintion Based on [binbashing/fail2ban](https://github.com/binbashing/fail2ban-docker) with cloudflare-iplist installed
+A simple Docker container defintion based on [binbashing/fail2ban](https://github.com/binbashing/fail2ban-docker) with cloudflare-iplist installed
 
 [Docker Hub](https://hub.docker.com/r/binbashing/fail2ban-cf-iplist)

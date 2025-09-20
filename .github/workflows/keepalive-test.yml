@@ -1,0 +1,20 @@
+name: Keepalive Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  keepalive-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Force keepalive commit
+        uses: entepotenz/keep-github-actions-alive-min-dependencies@v1
+        with:
+          TIME_ELAPSED_THRESHOLD_IN_DAYS: '0'
